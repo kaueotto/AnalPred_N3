@@ -1,0 +1,141 @@
+<html><head><base href="." target="_blank">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+    
+        .container {
+            width: 100%;
+            max-width: 1800px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    
+        .title {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+    
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+    
+        .image-placeholder {
+            width: 350px;
+            height: 580px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 16px;
+            border: 2px dashed #999;
+            transition: all 0.3s ease;
+        }
+    
+        .image-placeholder:hover {
+            background-color: #d0d0d0;
+            cursor: pointer;
+        }
+    
+        .results-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px 0;
+            padding-left: 10%;
+        }
+    
+        .table-container {
+            flex: 0.5; /* Reduced from 1 to make table smaller */
+          
+        }
+    
+        table {
+            width: 80%; /* Reduced from 100% */
+            border-collapse: collapse;
+            margin: 0 auto; /* Center the table */
+        }
+    
+        td {
+            border: 1px solid #ccc;
+            padding: 15px; /* Reduced from 20px */
+            text-align: center;
+            background-color: #f8f8f8;
+            transition: all 0.3s ease;
+            font-size: 14px; /* Added smaller font size */
+        }
+    
+        td:hover {
+            background-color: #e8e8e8;
+            cursor: pointer;
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .container {
+            animation: fadeIn 0.5s ease-out;
+            height: 800px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Tratamentos</h2>
+            <div class="image-container">
+                <div class="image-placeholder">
+                    <img src="matriz_correlacao.png" alt="Descrição da Imagem" style="width: 400%; height: 100%; border-radius: 8px;">
+                </div>
+                <div class="image-placeholder">
+                    <img src="distribuicao_classes.png" alt="Descrição da Imagem" style="width: 400%; height: 100%; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <h2 class="title">Resultados</h2>
+            <div class="results-container">
+                <div class="image-placeholder">
+                    <img src="matriz_confusao.png" alt="Descrição da Imagem" style="width: 400%; height: 100%; border-radius: 8px;">
+                </div>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td>Com Redução</td>
+                            <td>94%</td>
+                        </tr>
+                        <tr>
+                            <td>Sem Redução</td>
+                            <td>86%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
